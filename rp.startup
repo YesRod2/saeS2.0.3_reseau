@@ -1,0 +1,7 @@
+ip a add 172.16.199.4/28 dev eth0
+ip a add 172.16.192.254/23 dev eth1
+ip link set dev eth0 up
+ip link set dev eth1 up
+ip r add default via 172.16.199.3
+
+
