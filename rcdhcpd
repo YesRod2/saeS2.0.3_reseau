@@ -1,0 +1,10 @@
+subnet 172.23.198.0 netmask 255.255.254.0
+{
+	range 172.23.198.1 172.23.199.253;
+	option routers 10.0.3.1;
+}
+
+host rc {
+	hardware ethernet D6:75:EC:1E:A4:D1;
+	fixed-address 172.23.199.254;
+}
