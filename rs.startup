@@ -1,9 +1,10 @@
-ip a add 172.16.199.2/28 dev eth0
+ip a add 172.16.199.18/28 dev eth0
 ip a add 172.16.198.126/25 dev eth1
-ip link set dev eth0
-ip link set dev eth1
+ip link set dev eth0 up
+ip link set dev eth1 up
 
-ip r add default via 172.16.199.1
+ip r add default via 172.16.199.17
+ip r add 172.16.198.128/25 via 172.16.198.125
 
 cp shared/rsinterfaces etc/network/interfaces
 
