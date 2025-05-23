@@ -1,6 +1,6 @@
 ip a add 172.16.199.17/28 dev eth0
 ip a add 172.16.199.1/28 dev eth1
-ip a add 172.16.193.1/28 dev eth2
+ip a add 172.16.199.33/28 dev eth2
 
 ip link set dev eth0 up
 ip link set dev eth1 up
@@ -9,7 +9,7 @@ ip link set dev eth2 up
 ip r add 172.16.198.0/25 via 172.16.199.18
 ip r add 172.16.198.128/25 via 172.16.199.18
 ip r add 172.16.192.0/23 via 172.16.199.2
-ip r add 172.16.200.0/22 via 172.16.193.2
+ip r add 172.16.200.0/22 via 172.16.199.34
 
 iptables -t nat -A POSTROUTING -o eth3 -j MASQUERADE
 
