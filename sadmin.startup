@@ -5,3 +5,11 @@ ip r add default via 172.16.198.254
 cp shared/sadmininterfaces etc/network/interfaces
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+apt update
+apt install -y openssh-server
+
+useradd -m admin
+echo "admin:admin" | chpasswd
+
+service ssh start
