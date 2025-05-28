@@ -1,10 +1,12 @@
+cp shared/pcdinterfaces etc/network/interfaces
+
+
 while ! ip a show eth0 |
     grep -q "inet "; do
         dhclient eth0
         sleep 5
 done
 
-cp shared/pcdinterfaces etc/network/interfaces
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
