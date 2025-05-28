@@ -3,6 +3,7 @@ ip link set dev eth0 up
 ip r add default via 172.16.198.254
 
 cp shared/sfinterfaces etc/network/interfaces
+cp shared/vsftpd etc/vsftpd.conf
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
