@@ -6,6 +6,6 @@ ip link set dev eth1 up
 ip r add default via 172.16.199.17
 ip r add 172.16.198.128/25 via 172.16.198.125
 
-cp shared/rsinterfaces etc/network/interfaces
+cp shared/rsinterfaces /etc/network/interfaces
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf

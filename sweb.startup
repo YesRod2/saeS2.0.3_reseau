@@ -4,6 +4,6 @@ ip link set dev eth0 up
 ip r a default via 172.16.198.126
 ip r add 172.16.198.128/25 via 172.16.198.125
 
-cp shared/swebinterfaces etc/network/interfaces
+cp shared/swebinterfaces /etc/network/interfaces
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf

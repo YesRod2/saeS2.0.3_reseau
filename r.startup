@@ -13,4 +13,4 @@ ip r add 172.16.200.0/22 via 172.16.199.34
 
 iptables -t nat -A POSTROUTING -o eth3 -j MASQUERADE
 
-cp shared/rinterfaces etc/network/interfaces
+cp shared/rinterfaces /etc/network/interfaces

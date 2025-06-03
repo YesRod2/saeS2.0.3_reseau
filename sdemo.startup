@@ -2,6 +2,6 @@ ip a add 172.16.198.131/25 dev eth0
 ip link set dev eth0 up
 ip r add default via 172.16.198.254
 
-cp shared/sdemointerfaces etc/network/interfaces
+cp shared/sdemointerfaces /etc/network/interfaces
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
